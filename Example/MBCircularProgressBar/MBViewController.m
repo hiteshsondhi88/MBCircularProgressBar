@@ -23,6 +23,7 @@
 }
 
 - (IBAction)animate:(UIButton *)sender {
+    self.progressBar.textToPresent = @"5";
     if(self.animatedSwitch.on){
         [self.progressBar setValue:100.f - self.progressBar.value
                           animateWithDuration:1];

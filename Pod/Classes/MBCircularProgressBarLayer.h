@@ -145,4 +145,6 @@
  */
 @property (nonatomic,assign)  BOOL      countdown;
 
+@property (nonatomic,copy) NSString* textToPresent;
+
 @end

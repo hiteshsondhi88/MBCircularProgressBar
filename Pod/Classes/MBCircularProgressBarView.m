@@ -64,6 +64,7 @@
     [self setTextOffset:CGPointMake(0, 0)];
     [self setUnitFontName:@"HelveticaNeue-Thin"];
     [self setCountdown:NO];
+    [self setTextToPresent:@""];
 }
 
 #pragma mark - Getters and Setters for layer properties
@@ -151,6 +152,14 @@
 
 -(NSString*)unitString{
     return self.progressLayer.unitString;
+}
+
+-(void)setTextToPresent:(NSString *)textToPresent{
+    self.progressLayer.textToPresent = textToPresent;
+}
+
+-(NSString*)textToPresent{
+    return self.progressLayer.textToPresent;
 }
 
 -(void)setFontColor:(UIColor*)color{
